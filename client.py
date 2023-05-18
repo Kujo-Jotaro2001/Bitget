@@ -1,9 +1,9 @@
 import requests
 import json
-from enums import *
-import utils
-import exceptions
-import logger
+from Bitget.enums import *
+from Bitget import utils
+from Bitget import exceptions
+from Bitget import logger
 
 
 class Client(object):
