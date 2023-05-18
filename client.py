@@ -1364,8 +1364,8 @@ class Client(object):
         if symbol and limit:
             params["symbol"] = symbol
             params["limit"] = limit
-            params["startTime"] = symbol
-            params["endTime"] = limit
+            params["startTime"] = startTime
+            params["endTime"] = endTime
             return self._request_with_params(GET, SPOT_MARKET_V1_URL + '/fills', params)
         else:
             logger.error("pls check args")
