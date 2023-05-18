@@ -1351,7 +1351,7 @@ class Client(object):
             logger.error("pls check args")
             return False
 
-    def spot_get_market_trades(self, symbol, limit=100):
+    def spot_get_market_trades(self, symbol, startTime='', endTime='', limit=100):
         """
         Get Market Trades: https://bitgetlimited.github.io/apidoc/en/spot/#get-market-trades
 
@@ -1364,6 +1364,8 @@ class Client(object):
         if symbol and limit:
             params["symbol"] = symbol
             params["limit"] = limit
+            params["startTime"] = symbol
+            params["endTime"] = limit
             return self._request_with_params(GET, SPOT_MARKET_V1_URL + '/fills', params)
         else:
             logger.error("pls check args")
