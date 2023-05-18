@@ -1,9 +1,9 @@
 import requests
 import json
-from Bitget.enums import *
-from Bitget import utils
-from Bitget import exceptions
-from Bitget import logger
+from pybitget.enums import *
+from pybitget import utils
+from pybitget import exceptions
+from pybitget import logger
 
 
 class Client(object):
