@@ -1366,7 +1366,7 @@ class Client(object):
             params["limit"] = limit
             params["startTime"] = startTime
             params["endTime"] = endTime
-            return self._request_with_params(GET, SPOT_MARKET_V1_URL + '/fills', params)
+            return self._request_with_params(GET, SPOT_MARKET_V1_URL + '/fills-history', params)
         else:
             logger.error("pls check args")
             return False
