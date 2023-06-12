@@ -12,7 +12,7 @@ import base64
 import websocket
 from typing import Optional
 from enums import GET, REQUEST_PATH, CONTRACT_WS_URL
-import logger
+from loguru import logger
 
 WS_OP_LOGIN = 'login'
 WS_OP_SUBSCRIBE = "subscribe"
