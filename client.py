@@ -3,7 +3,7 @@ import json
 from enums import *
 import utils
 import exceptions
-import logger
+from loguru import logger
 
 
 class Client(object):
