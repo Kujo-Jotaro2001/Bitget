@@ -1,7 +1,7 @@
 import hmac
 import base64
 import time
-from .enums import *
+from enums import *
 import string
 import random
 
