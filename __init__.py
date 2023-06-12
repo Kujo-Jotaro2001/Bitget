@@ -7,7 +7,7 @@
 __version__ = '1.0.6'
 
 from loguru import logger
-from pybitget.client import Client
-from pybitget import utils
-from pybitget import exceptions
-from pybitget.enums import *
+from client import Client
+import utils
+import exceptions
+from enums import *
